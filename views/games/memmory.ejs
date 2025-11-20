@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="stylesheet" href="/css/games/memmory.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+        <%- include('../navbar'); %>
+
+    <h1 id="level-title">Welcome</h1>
+
+    <button class="start">PLAY</button>
+
+    <div class="buttons">
+        <div id="green" class="btn green"></div>
+        <div id="red" class="btn red"></div>
+        <div id="yellow" class="btn yellow"></div>
+        <div id="blue" class="btn blue"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/js/memmory.js"></script>
+
+</body>
+
+</html>

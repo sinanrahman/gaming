@@ -7,3 +7,7 @@ exports.Dead = (req, res) => {
 exports.Ghost = (req, res) => {
     return res.render('games/ghost')
 };
+
+exports.Memmory = (req, res) => {
+    return res.render('games/memmory')
+};
