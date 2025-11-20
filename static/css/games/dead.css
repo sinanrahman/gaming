@@ -1,0 +1,173 @@
+* {
+    overflow: hidden;
+}
+
+.Main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/dead/background.png);
+}
+
+.navbar__main {
+    position: fixed !important;
+    top: 0%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.249);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+}
+
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.game {
+    position: relative;
+    padding: 0px 100px;
+}
+
+.first {
+    height: 100vh;
+}
+
+.second {
+    height: 100vh;
+
+}
+
+.third {
+    height: 100vh;
+}
+
+.fourth {
+    height: 100vh;
+}
+
+.run-img {
+    width: 30%;
+    height: 150px;
+    width: 150px;
+    z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    left: 67%;
+}
+
+.ghost {
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 23%;
+}
+
+.ghost-img {
+    width: 200px;
+    height: 200px;
+}
+
+.Overlay1 {
+    background-image: url(/img/dead/starting.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.Overlay2 {
+    background-image: url(/img/dead/death.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gameOver {
+    color: red;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+}
+
+.maintxt {
+    position: absolute;
+    top: 220px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn1 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    background: transparent;
+    padding: 10px 50px;
+    position: absolute;
+    left: 670px;
+    top: 400px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.btn1:hover {
+    color: rgb(252, 4, 4);
+    background: black;
+    cursor: pointer;
+}
+
+.btn2 {
+    color: rgb(5, 73, 7);
+    font-size: 20px;
+    background: transparent;
+    padding: 10px 50px;
+    position: absolute;
+    left: 670px;
+    top: 250px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.btn2:hover {
+    color: white;
+    background: black;
+    cursor: pointer;
+}
+
+.score-board {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.bullet {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}

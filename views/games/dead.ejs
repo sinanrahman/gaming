@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/games/dead.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/js/bootstrap.bundle.min.js">
+</head>
+
+<div class="Main">
+    <div class="container-fluid game " id="game">
+        <div class="row ">
+            <div class="col-3 first">
+                <div class="img1" id="image-1"></div>
+            </div>
+            <div class="col-3 second">
+                <div class="img2" id="image-2"></div>
+            </div>
+            <div class="col-3 third">
+                <div class="img3" id="image-3"></div>
+            </div>
+            <div class="col-3 fourth">
+                <div class="img4" id="image-4"></div>
+            </div>
+        </div>
+
+        <img src="/img/dead/shooter.png" alt="" class="run-img" id="runner">
+
+        <div class="score-board">Score: <span id="score">0</span></div>
+    </div>
+
+    <section class="Overlay1" id="overlay1">
+        <%- include('../navbar'); %>
+            <marquee behavior="" direction="">"Dodge. Shoot. Survive. Can you outlast the undead?"</marquee>
+            <h1 class="text-center text-danger mt-5 maintxt" id="startgame"><span class="text-dark">WELCOME
+                    TO</span> <br> UNDEAD ESCAPE </h1>
+            <button onclick="startGame()" class="btn1 btn-outline-primary   mt-5">START GAME </button>
+    </section>
+
+    <section class="Overlay2" id="overlay2">
+        <%- include('../navbar'); %>
+            <h1 class="gameOver  mt-5" id="GAME OVER">GAME OVER</h1>
+            <button onclick="resetGame()" class="btn2 btn-outline-primary   mt-5">RESTART FIRE</button>
+    </section>
+</div>
+
+<script src="/js/dead.js">
+
+</script>
+</body>
+
+</html>

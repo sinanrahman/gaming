@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= game.title %> | ZYNOX Gaming</title>
+
+
+    <link rel="stylesheet" href="/css/play.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/js/bootstrap.bundle.min.js">
+</head>
+
+<body>
+
+        <%- include('navbar'); %>
+
+
+    <!-- Background Video -->
+    <video autoplay muted loop class="bg-video">
+        <source src="<%= game.bgVideo %>" type="video/mp4">
+    </video>
+
+    <!-- HEADER -->
+    <div class="game-header">
+        <h1 class="game-title"><%= game.title %></h1>
+        <p class="mt-3 w-50 fs-5"><%= game.description %></p>
+
+        <a href="<%= game.playLink %>" class="play-btn mt-4 d-inline-block">▶ PLAY NOW</a>
+    </div>
+
+    <div class="container mt-5">
+
+        <!-- INFO SECTION -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h5>Genre</h5>
+                    <p><%= game.genre %></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h5>Developer</h5>
+                    <p><%= game.developer %></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h5>Rating</h5>
+                    <p><%= game.rating %> / 10 ⭐</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE GALLERY -->
+        <h2 class="mt-5 mb-3">GAME GALLERY</h2>
+
+        <div class="row gallery">
+            <% game.images.forEach(img => { %>
+                <div class="col-md-4 mb-4">
+                    <img src="<%= img %>" alt="Game Image">
+                </div>
+            <% }) %>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+
+ 

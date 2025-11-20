@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="/css/games/ghost.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/js/bootstrap.bundle.min.js">
+</head>
+
+<body>
+    <div class="Main">
+        <div class="container-fluid game " id="game">
+            <div class="row ">
+
+                <div class="col-3 first">
+                    <div class="img1" id="image-1">
+                    </div>
+                </div>
+                <div class="col-3 second">
+
+                    <div class="img2" id="image-2"> </div>
+                </div>
+                <div class="col-3 third">
+                    <div class="img3" id="image-3"> </div>
+                </div>
+                <div class="col-3 fourth">
+
+                    <div class="img4" id="image-4">
+
+                        
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <img src="/img/ghost/run.gif" alt="" class="run-img" id="runner">
+
+
+            <input type="text" name="score" id="">
+
+        </div>
+
+        <section class="Overlay2" id="overlay2">
+        <%- include('../navbar'); %>
+            <button onclick="resetGame()" class="btn2 btn-outline-primary   mt-5">RESTART GAME</button>
+            <h1 class="text-center text-danger mt-5" id="GAME OVER">GAME OVER</h1>
+        </section>
+
+
+    </div>
+
+    <script src="/js/ghost.js"></script>
+</body>
+
+</html>

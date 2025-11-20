@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zynox</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/js/bootstrap.bundle.min.js">
+</head>
+
+<body>
+    <%- include('navbar'); %>
+
+        <div class="main">
+            <video autoplay muted loop src="/vid/hero.mp4"></video>
+            <img src="/img/logo/head.png" alt="">
+
+        </div>
+
+        <div class="featured-section py-5">
+            <div class="container">
+
+                <h5 class="text-light mb-3">FEATURED & RECOMMENDED</h5>
+
+                <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="featured-card row g-0 shadow-lg glass-card">
+                                <div class="col-md-8 main-banner">
+                                </div>
+
+                                <!-- Right Side -->
+                                <div class="col-md-4 p-3 text-light">
+                                    <h3 class="fw-bold">E-FOOTBALL</h3>
+
+                                    <div class="thumb-grid mt-3">
+                                        <img src="/img/efootball/tm.webp" class="thumb">
+                                        <img src="/img/efootball/strikeArena.png" class="thumb">
+                                        <img src="/img/efootball/barca.jpg" class="thumb">
+                                        <img src="/img/efootball/fifaCollab.png" class="thumb">
+                                    </div>
+
+                                    <div class="recommend-box mt-3 p-2">
+                                        <p class="m-0"><strong class="text-success">Recommended</strong> by Konami
+                                            Review
+                                            Group</p>
+                                    </div>
+
+                                    <div class="price-box mt-3">
+                                        <span class="discount">-40%</span>
+                                        <span class="old-price">₹450</span>
+                                        <span class="new-price">₹270</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ===== SLIDE 2 ===== -->
+                        <div class="carousel-item">
+                            <div class="featured-card row g-0 shadow-lg">
+
+                                <div class="col-md-8 main-banner2">
+                                </div>
+
+                                <div class="col-md-4 p-3 text-light">
+                                    <h3 class="fw-bold">NFS</h3>
+
+                                    <div class="thumb-grid mt-3">
+                                        <img src="/img/nfs/cars.jpeg" class="thumb">
+                                        <img src="/img/nfs/bmw.jpg" class="thumb">
+                                        <img src="/img/nfs/most-wanted.jpg" class="thumb">
+                                        <img src="/img/nfs/police.png" class="thumb">
+                                    </div>
+
+                                    <div class="recommend-box mt-3 p-2">
+                                        <p class="m-0"><strong class="text-success">Recommended</strong> by Space Gamers
+                                        </p>
+                                    </div>
+
+                                    <div class="price-box mt-3">
+                                        <span class="discount">-70%</span>
+                                        <span class="old-price">₹999</span>
+                                        <span class="new-price">₹299</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more slides here -->
+                        <div class="carousel-item">
+                            <div class="featured-card row g-0 shadow-lg">
+
+                                <div class="col-md-8 main-banner3">
+                                </div>
+
+                                <div class="col-md-4 p-3 text-light">
+                                    <h3 class="fw-bold">GTA</h3>
+
+                                    <div class="thumb-grid mt-3">
+                                        <img src="/img/gta/img-1.jpeg" class="thumb">
+                                        <img src="/img/gta/img-2.webp" class="thumb">
+                                        <img src="/img/gta/img-3.webp" class="thumb">
+                                        <img src="/img/gta/img-4.jpg" class="thumb">
+                                    </div>
+
+                                    <div class="recommend-box mt-3 p-2">
+                                        <p class="m-0"><strong class="text-success">Recommended</strong> by Gta Gammers
+                                        </p>
+                                    </div>
+
+                                    <div class="price-box mt-3">
+                                        <span class="discount">-40%</span>
+                                        <span class="old-price">₹999</span>
+                                        <span class="new-price">₹500</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators mt-2">
+                        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured-section2 py-5">
+            <div class="container">
+
+                <h5 class="text-light mb-3">FREE GAMES TO PLAY</h5>
+
+                <div id="singleCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- ===== Slide 1 ===== -->
+                        <div class="carousel-item active">
+                            <div class="carousel-title">UNDEAD ESCAPE</div>
+                            <div class="single-card glass2-card" onclick="location.href='/play/undead'">
+                                <div class="single-banner banner-one"></div>
+                            </div>
+                        </div>
+
+                        <!-- ===== Slide 2 ===== -->
+                        <div class="carousel-item">
+                            <div class="carousel-title">GHOST RIDE</div>
+                            <div class="single-card glass2-card" onclick="location.href='/play/ghost'">
+                                <div class="single-banner banner-two"></div>
+                            </div>
+                        </div>
+
+                        <!-- ===== Slide 3 (example) ===== -->
+                        <div class="carousel-item">
+                            <div class="carousel-title">UNDEAD ESCAPE</div>
+                            <div class="single-card glass2-card" onclick="location.href='/play/3'">
+                                <div class="single-banner banner-three"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#singleCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#singleCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="carousel-indicators mt-2">
+                        <button type="button" data-bs-target="#singleCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#singleCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#singleCarousel" data-bs-slide-to="2"></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid m-0 bg-black text-center section-3">
+            <h3 class="text-light bg-black">EA Latest Games</h3>
+
+            <div class=" section-3-1">
+                <div class="box" data-aos="fade-right"><img src="/img/eaLatest/ea-sports.jpg" alt=""></div>
+                <div class="shadow-overlay"></div>
+                <div class="box" data-aos="fade-left"><img src="/img/eaLatest/fifa-mobile.png" alt=""></div>
+                <div class="shadow-overlay"></div>
+
+            </div>
+
+            <div class=" section-3-2">
+                <div class="box" data-aos="fade-right"><img src="/img/eaLatest/f1.jpg" alt=""></div>
+                <div class="shadow-overlay"></div>
+                <div class="box" data-aos="fade-left"><img src="/img/eaLatest/ufc.avif" alt=""></div>
+                <div class="shadow-overlay"></div>
+
+            </div>
+
+        </div>
+
+        <section class="section-4 p-5">
+            <h2 class="section-title">BECAUSE YOU PLAYED NEED FOR SPEED™</h2>
+
+            <div id="gameCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="carousel-item-wrapper">
+
+                            <div class="game-card">
+                                <div class="image-placeholder"><img src="/img/games/img-1.webp" alt=""></div>
+                                <div class="pricing">
+                                    <div class="current-price">₹ 2,999</div>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Racing</span>
+                                    <span class="tag">Driving</span>
+                                    <span class="tag">Sports</span>
+                                    <span class="tag">Simulation</span>
+                                </div>
+                            </div>
+
+                            <div class="game-card">
+                                <div class="image-placeholder"><img src="/img/games/img-2.jpg" alt=""></div>
+                                <div class="pricing">
+                                    <div class="current-price">₹ 3,499</div>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Racing</span>
+                                    <span class="tag">Driving</span>
+                                    <span class="tag">Open World</span>
+                                    <span class="tag">Arcade</span>
+                                </div>
+                            </div>
+
+                            <div class="game-card sale">
+                                <div class="image-placeholder"><img src="/img/games/img-3.jpg" alt=""></div>
+                                <div class="pricing">
+                                    <div class="current-sale-price">₹ 699</div>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Racing</span>
+                                    <span class="tag">Driving</span>
+                                    <span class="tag">Atmospheric</span>
+                                    <span class="tag">Automobile Sim</span>
+                                </div>
+                            </div>
+
+                            <div class="game-card">
+                                <div class="image-placeholder"><img src="/img/games/img-4.jpg" alt=""></div>
+                                <div class="pricing">
+                                    <div class="current-price">₹ 2,099</div>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Racing</span>
+                                    <span class="tag">Driving</span>
+                                    <span class="tag">Atmospheric</span>
+                                    <span class="tag">Open World</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-item-wrapper">
+                            <div class="game-card">
+                                <div class="image-placeholder"><img src="/img/games/img-5.jpg" alt=""></div>
+                                <div class="pricing">
+                                    <div class="current-price">₹ 999</div>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Racing</span>
+                                    <span class="tag">Driving</span>
+                                    <span class="tag">Atmospheric</span>
+                                    <span class="tag">Automobile Sim</span>
+                                </div>
+                            </div>
+                            <div class="game-card">
+                                <div class="image-placeholder"><img src="/img/games/img-6.jpg" alt=""></div>
+                                <div class="pricing">
+                                    <div class="current-price">₹ 999</div>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Racing</span>
+                                    <span class="tag">Driving</span>
+                                    <span class="tag">Atmospheric</span>
+                                    <span class="tag">Automobile Sim</span>
+                                </div>
+                            </div>
+                            <div class="game-card">
+                                <div class="image-placeholder"><img src="/img/games/img-7.jpg" alt=""></div>
+                                <div class="pricing">
+                                    <div class="current-price">₹ 999</div>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Racing</span>
+                                    <span class="tag">Driving</span>
+                                    <span class="tag">Atmospheric</span>
+                                    <span class="tag">Automobile Sim</span>
+                                </div>
+                            </div>
+                            <div class="game-card">
+                                <div class="image-placeholder"><img src="/img/games/img-8.jpg" alt=""></div>
+                                <div class="pricing">
+                                    <div class="current-price">₹ 999</div>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">Racing</span>
+                                    <span class="tag">Driving</span>
+                                    <span class="tag">Atmospheric</span>
+                                    <span class="tag">Automobile Sim</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+            </div>
+
+        </section>
+        <div class="guns">
+            <h3>WHEN WORDS END, GUNS TALK</h3>
+        </div>
+        <section class="section-5">
+
+            <div class="action">
+                <div class="game-card">
+                    <img data-aos="fade-down-right" class="main-image" src="/img/action/img-1.jpg" alt="action">
+                    <div class="shadow-overlay"></div>
+                </div>
+
+                <div class="game-card">
+                    <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="main-image"
+                        src="/img/action/img-2.jpg" alt="FC 26">
+                    <div class="shadow-overlay"></div>
+                </div>
+
+                <div class="game-card">
+                    <img data-aos="fade-down-left" class="main-image" src="/img/action/img-3.jpg" alt="Madden 26">
+                    <div class="shadow-overlay"></div>
+                </div>
+
+                <div class="game-card">
+                    <img data-aos="fade-up-right" class="main-image" src="/img/action/img-4.jpg"
+                        alt="EA Sports College Football 26">
+                    <div class="shadow-overlay"></div>
+                </div>
+
+                <div class="game-card">
+                    <img data-aos="fade-up" data-aos-duration="3000" class="main-image" src="/img/action/img-5.avif"
+                        alt="F1 25">
+                    <div class="shadow-overlay"></div>
+                </div>
+
+                <div class="game-card">
+                    <img data-aos="fade-up-left" class="main-image" src="/img/action/img-6.jpg" alt="UFC 5">
+                    <div class="shadow-overlay"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section-6">
+            <div class="container-fluid main-content">
+                <h1 class="heading">𝓗𝓪𝓿𝓮 𝓕𝓾𝓷</h1>
+
+                <div class="content-wrapper">
+                    <div class="row justify-content-center g-4">
+                        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                            <div class="glass-box">
+                                <div class="image-placeholder"><img src="/img/fun/cook-1.png" alt=""></div>
+                                <p class="game-name" data-aos="zoom-in-right">Mom's Kitchen</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                            <div class="glass-box">
+                                <div class="image-placeholder"><img src="/img/fun/ludo-1.webp" alt=""></div>
+                                <p class="game-name" data-aos="zoom-in-right">Snake & Ladder</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                            <div class="glass-box">
+                                <div class="image-placeholder"><img src="/img/fun/sm-2.webp" alt=""></div>
+                                <p class="game-name" data-aos="zoom-in-left">SM Simulator</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                            <div class="glass-box">
+                                <div class="image-placeholder"><img src="/img/fun/angry-1.jpg" alt=""></div>
+                                <p class="game-name" data-aos="zoom-in-left">Anngry Birds</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mt-4 g-4">
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                            <div class="glass-box">
+                                <div class="image-placeholder"><img src="/img/fun/cook-2.webp" alt=""></div>
+                                <p class="game-name" data-aos="zoom-in-right">Cooking Madness</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                            <div class="glass-box">
+                                <div class="image-placeholder"><img src="/img/fun/ludo-2.webp" alt=""></div>
+                                <p class="game-name" data-aos="zoom-in-right">Ludo King</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                            <div class="glass-box">
+                                <div class="image-placeholder"><img src="/img/fun/sm-1.png" alt=""></div>
+                                <p class="game-name" data-aos="zoom-in-left">SM Sort</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                            <div class="glass-box">
+                                <div class="image-placeholder"><img src="/img/fun/angry-2.jpg" alt=""></div>
+                                <p class="game-name" data-aos="zoom-in-left">Hay Day</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include('footer'); %>
+
+            <script>
+                AOS.init();
+            </script>
+</body>
+
+</html>
