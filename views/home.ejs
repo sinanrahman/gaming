@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zynox</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="icon" href="/favicon/colour.png" type="image/x-icon">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-    <%- include('navbar'); %>
+    <%- include('./partials/navbar'); %>
 
         <div class="main">
             <video autoplay muted loop src="/vid/hero.mp4"></video>
@@ -471,7 +472,7 @@
             </div>
         </section>
 
-        <%- include('footer'); %>
+        <%- include('./partials/footer'); %>
 
             <script>
                 AOS.init();

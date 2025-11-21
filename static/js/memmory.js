@@ -6,7 +6,6 @@ var number=0;
 function playSound(name){
     var audio = new Audio("/sounds/"+name+".mp3");
     audio.play()
-    audio.remove()
 }
 
 function animatePress(currentColour){
