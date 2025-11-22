@@ -17,6 +17,6 @@ const Routes = require('./routes/games')
 app.use('/game',Routes)
 
 
-app.listen(port,"192.168.29.93", () => {
+app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })

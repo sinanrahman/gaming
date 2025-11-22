@@ -11,5 +11,5 @@ exports.Play = (req, res) => {
     if (!game) {
         return res.status(404).send("Game not found");
     }
-   return res.render('play',{game})
+   return res.render('game',{game})
 };
